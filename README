@@ -4,7 +4,7 @@ TouchableNodes
  
 Created by Jay Roberts on 2010-02-25.
 Copyright 2010 GloryFish.org. All rights reserved.
-
+License: http://www.cocos2d-iphone.org/wiki/doku.php/license (GNU LGPL v3 with an extension)
 
 Lightweight classes providing invisible and semi-invisible UI elements for responding to touches. Supports canceling a button press by dragging off of the button.
 
