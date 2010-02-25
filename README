@@ -1,0 +1,27 @@
+
+README
+TouchableNodes
+ 
+Created by Jay Roberts on 2010-02-25.
+Copyright 2010 GloryFish.org. All rights reserved.
+
+
+Lightweight classes providing invisible and semi-invisible UI elements for responding to touches. Supports canceling a button press by dragging off of the button.
+
+Created for use in TCG Counter http://tcgcounter.com where most of the UI is provided by a single static background image and touches are indicated with particle system emits. TouchableRegions are used to define static button locations on the screen and are wired into methods on the parent view.
+
+TouchableOverlays are also used for simple static buttons that are part of the background but also have a hover state. An additional CCSprite is provides which is displayed when touched and faded out when cancelled.
+
+Usage:
+
+// Layer init
+-(id)init {
+   TouchableRegion *button = [TouchableRegion regionWithRect: CGRectMake(0.0f, 100.0f, 100.0f, 100.0f) target: self selector:@selector(buttonPress)];
+   [self addChild: button z: 1];
+
+}
+
+// Layer method
+-(void) buttonPress {
+   NSLog(@"Button Pressed!");
+}
