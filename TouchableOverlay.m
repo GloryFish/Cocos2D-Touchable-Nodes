@@ -121,6 +121,7 @@
     
     ccDrawPoly( vertices2, 4, YES);
     
+    glColor4ub(255,255,255,255);
   }
 }
 
